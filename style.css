@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+:root {
+  /* Primary Colors */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients Colors */
+  /* */
+
+  --Light-slate-blue: hsl(252, 100%, 67%); /* background */
+  --Light-royal-blue: hsl(241, 81%, 54%); /* background */
+
+  --Violet-blue: hsla(256, 72%, 46%, 1); /* circle */
+  --Persian-blue: hsla(241, 72%, 46%, 0); /* circle */
+
+  /*  Neutral Colors*/
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+body {
+  /* background-color: var(--Dark-gray-blue); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+}
+.main-bg {
+  display: flex;
+  height: 470px;
+}
+
+/* Left Side  */
+.left-side {
+  background: linear-gradient(to top, #2f2ce9, #6943ff);
+  text-align: center;
+  border-radius: 30px;
+  width: 50%;
+  padding: 10px;
+}
+.l-h3 {
+  color: var(--Light-lavender);
+  margin: 30px 0;
+}
+.l-p1 {
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  color: var(--Light-lavender);
+  width: 55%;
+  height: 39%;
+  margin: auto;
+  padding-top: 55px;
+  margin-bottom: 25px;
+}
+.l-p1 span {
+  font-size: 50px;
+  color: var(--White);
+  font-weight: bold;
+}
+.l-text {
+  color: var(--White);
+  margin: 15px 0 18px 0;
+  font-size: 25px;
+}
+.l-p {
+  width: 70%;
+  margin: auto;
+  color: var(--Light-lavender);
+}
+
+/* Right-Side */
+
+li {
+  list-style: none;
+}
+
+.right-side {
+  width: 50%;
+  padding: 10px 30px 0 30px;
+}
+.r-h3 {
+  margin: 30px 0;
+}
+
+li {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+  background-color: aqua;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/*  Summary Icon & text Color */
+.span-1 {
+  color: var(--Light-red);
+}
+.span-2 {
+  color: var(--Orangey-yellow);
+}
+.span-3 {
+  color: var(--Green-teal);
+}
+.span-4 {
+  color: var(--Cobalt-blue);
+}
+
+.bg-1 {
+  background-color: hsla(0, 100%, 95%, 0.4);
+  justify-content: space-between;
+}
+.bg-2 {
+  background-color: hsla(60, 100%, 95%, 0.9);
+  justify-content: space-between;
+}
+.bg-3 {
+  background-color: hsla(120, 100%, 95%, 0.4);
+  justify-content: space-between;
+}
+.bg-4 {
+  background-color: hsla(240, 100%, 95%, 0.4);
+  justify-content: space-between;
+}
+.pnumber {
+  padding-top: 7.5px;
+}
+/* ICON Img */
+li img {
+  width: 20px;
+}
+li .s-p {
+  padding: 5px 0 0 10px;
+}
+li .p2 {
+  float: right;
+}
+
+li .s-p span {
+  height: 50px;
+  width: 100%;
+}
+.summery-items {
+  display: flex;
+}
+/* Btn */
+
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: var(--Light-slate-blue);
+  cursor: pointer;
+}
+
+/* Resposevi Medis */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 135vh;
+  }
+  .main-bg {
+    height: fit-content;
+  }
+  .left-side {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .l-p {
+    width: 70%;
+    margin: auto;
+    color: var(--Light-lavender);
+    margin-bottom: 30px;
+  }
+  .l-p1 {
+    width: 25%;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .main-bg {
+    flex-direction: column;
+  }
+}
